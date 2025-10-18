@@ -1,0 +1,32 @@
+services:
+  mysql_db:
+    image: mysql:8.0
+    container_name: mysql_db
+    env_file:
+      - .env
+    networks:
+      - app-net
+    volumes:
+      - mysql_data:/var/lib/mysql
+
+  nginx:
+
+    image: nginx:latest
+    container_name: nginx
+    ports:
+      - "8081:80"
+    networks:
+      - app-net
+      - app-net2
+
+networks:
+
+  app-net:
+    driver: bridge
+    internal: true
+  app-net2:
+    driver: bridge
+  
+volumes:
+
+  mysql_data:
