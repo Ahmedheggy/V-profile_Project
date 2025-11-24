@@ -5,6 +5,8 @@ Each VM is provisioned automatically using shell scripts, and all services are c
 
 ## 1. Architecture Overview
 
+![](arch.png)
+
 The environment consists of five virtual machines:
 
 | VM Name | IP Address       | Role                                |
@@ -65,7 +67,11 @@ cd vprofile-vagrant
 
 2. Bring up the entire environment:
 ```
-vagrant up
+vagrant up db01
+vagrant up mc01
+vagrant up rmq01
+vagrant up app01
+vagrant up web01
 ```
 
 3. Reprovision a single VM:
@@ -73,10 +79,9 @@ vagrant up
 vagrant reload <vm-name> --provision
 ```
 
-4. Destroy and rebuild:
+4. Destroy:
 ```
 vagrant destroy -f
-vagrant up
 ```
 
 ## 6. Application Access
@@ -138,6 +143,6 @@ Test memcached:
 telnet mc01 11211
 ```
 
-## 10. License
+##Output
 
-This project is for learning and DevOps training purposes.
+![](result.png)
