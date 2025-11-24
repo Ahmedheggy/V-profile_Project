@@ -5,7 +5,7 @@ Each VM is provisioned automatically using shell scripts, and all services are c
 
 ## 1. Architecture Overview
 
-![](arch.png)
+![](imgs/arch.png)
 
 The environment consists of five virtual machines:
 
@@ -143,6 +143,6 @@ Test memcached:
 telnet mc01 11211
 ```
 
-##Output
+## 10. FinalResult
 
-![](result.png)
+![](imgs/result.png)
