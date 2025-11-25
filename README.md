@@ -6,7 +6,7 @@ Each VM is provisioned automatically using shell scripts, and all services are c
 ## 1. Architecture Overview
 
 <div align="center">
-    <img src="imgs/arch2.png" width="30%">
+    <img src="imgs/arch2.png" width="50%">
 </div>
 
 
