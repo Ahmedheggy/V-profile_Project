@@ -5,9 +5,10 @@ Each VM is provisioned automatically using shell scripts, and all services are c
 
 ## 1. Architecture Overview
 
-![](imgs/arch2.png)
+<div align="center">
+    <img src="imgs/arch2.png" width="30%">
+</div>
 
-The environment consists of five virtual machines:
 
 | VM Name | IP Address       | Role                                |
 |---------|------------------|--------------------------------------|
