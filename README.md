@@ -5,7 +5,7 @@ Each VM is provisioned automatically using shell scripts, and all services are c
 
 ## 1. Architecture Overview
 
-![](imgs/arch.png)
+![](imgs/arch2.png)
 
 The environment consists of five virtual machines:
 
